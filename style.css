@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #f5eae6;
+    background-color: lightgreen;
     font-family: "Truculenta", sans-serif;
 }
 
@@ -15,6 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #eeaa91c9;
 }
 
 #logo{
@@ -93,11 +94,61 @@ nav > a{
     border: 1px solid green;
     cursor: pointer;
     box-shadow: 1px 2px 10px #afa5a2;
-    transition: .3s ease;
+    
 }
 
 #contratar:hover, #ler-mais:hover{
     background-color: #079907a2;
     color: white;
     transition: .3s ease;
+    transform: translateY(-4);
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: #eeaa91;
+    padding: 10px;
+}
+
+.galeria img{
+    background-size: cover;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.servico-geral{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+.servicos{
+    flex: 1 1 200px;
+    max-width: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.servicos img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+    margin: 10px 0px 0px 0px;
+    padding: 20px;
 }
