@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,8 +7,8 @@
 }
 
 body{
-    background-color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5eae6;
+    font-family: "Truculenta", sans-serif;
 }
 
 header{
@@ -22,20 +24,80 @@ header{
 }
 
 nav{
+    
     padding-right: 50px;
 }
 nav > a{
     text-decoration: none;
     padding-right: 10px;
+    font-size: 1.5em;
+    color: green;
 }
 
 #banner{
     max-width: 100%;
-    max-height: 600px;
+    max-height: 400px;
     overflow: hidden;
 }
 
 #banner > img{ 
     width: 100%;
     height: auto;
+}
+
+.noticia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+.noticia img{
+    background-size: cover;
+    max-width: 50%;
+    height: 40%;
+    border-radius: 40px;
+}
+
+.conteudo{
+    flex: 1;
+    text-align: left;
+}
+
+.conteudo h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.conteudo p{
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: bolder;
+    line-height: 1.6;
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contratar, #ler-mais{
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px #afa5a2;
+    transition: .3s ease;
+}
+
+#contratar:hover, #ler-mais:hover{
+    background-color: #079907a2;
+    color: white;
+    transition: .3s ease;
 }
