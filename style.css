@@ -34,6 +34,9 @@ nav > a{
     font-size: 1.5em;
     color: green;
 }
+nav > a:hover{
+    color: white;
+}
 
 #banner{
     max-width: 100%;
@@ -143,12 +146,14 @@ nav > a{
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 footer{
     display: flex;
     justify-content: space-evenly;
     background-color: grey;
+    color: white;
     margin: 10px 0px 0px 0px;
     padding: 20px;
 }
